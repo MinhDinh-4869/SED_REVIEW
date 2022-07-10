@@ -1,0 +1,5 @@
+* The Singleton pattern is used when we want to make sure that there is only one objects of a class exists in the whole
+system memory
+
+* The key of singleton pattern is the constructor of the class must be private (or protected) so that the client can not
+freely initiate a new object as they want to.

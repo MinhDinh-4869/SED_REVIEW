@@ -1,0 +1,4 @@
+* Builder pattern is also used when we want to avoid the client to create a Product that need a lot of parameters for
+its constructor.
+
+* We use a Builder that have "smaller" method to get those params and build the Product with those params.

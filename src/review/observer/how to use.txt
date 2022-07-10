@@ -1,0 +1,2 @@
+* This design pattern has appeared in the last year exam.
+* It is used when there has the 1 to N relationship and once one thing updates the others can know.

@@ -1,0 +1,6 @@
+* The State Design Pattern is used when we want to separate the different states that can shift between each other
+by triggering some events (keyboard tapping, holding keys, ...)
+
+* We can use the Subject to store 1 State and use it to delegate the method of the state.
+
+* The client can talk with the Subject only.

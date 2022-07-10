@@ -1,0 +1,2 @@
+* Factory pattern is used when we want to avoid the clients to create the object themselves.
+* We use a Factory class to return an interface reference that points to the object the clients want.

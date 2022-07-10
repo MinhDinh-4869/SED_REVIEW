@@ -1,0 +1,2 @@
+* This option is to store a tree that is not n_ary tree
+* Each component has a list of composites reference to store the lower level of components

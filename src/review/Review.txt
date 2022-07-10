@@ -1,0 +1,62 @@
+* The case when the patterns are applied:
+* * Factory:
+- The factory pattern is used when we want to avoid the clients to create the objects themselves.
+- We use a factory object to return an Interface reference to the required object that the client need.
+
+* * Builder
+- The Builder Pattern is used when we have an object with complex constructor, and we do not want the client to create
+that complex object
+- We use a builder pattern that "separate" the constructor and help the client to create object.
+-https://www.design-patterns-stories.com/patterns/Builder/#:~:text=One%20burger%2C%20one%20cold%20drink,example%20of%20the%20Builder%20pattern.
+
+* * Singleton
+- The Singleton pattern is used when we want to make sure that there is only one object of a class exists in the whole
+system. The client can not freely create as many objects as they want
+- The key of Singleton Pattern is the constructor of the object should be private and the class as an INSTANCE of its
+type as a field. And the getInstance() method will return this object.
+
+* * Prototype
+- The Prototype Pattern is used when we want to avoid creating a new object that is costly, then we can create a prototype
+one and store it inside the factory. Once we need an object, the factory will clone the prototype without creating a whole
+new object.
+- The prototype object should implement the Cloneable interface and override the clone() method
+
+* * Composite
+- The Composite Pattern is used when we want to construct a tree like structure
+- There are 2 ways to implement this pattern
+    - The first one is for binary or n-ary tree type: We will have 2 implementation for the Composite interface, the
+    Component and the Leave. The Component will store some Composite references.
+    - The second one is for non n-ary tree: We will have a list of Composite references.
+- This Pattern allows us to use delegation recursively
+
+* * Adapter
+- The Adapter Pattern is used when we have 2 or more interfaces and the client know the way to use (the methods) of 1
+interface only. Then we need an adapter class that implements the known interface and have another interface reference as
+its field. Now we can delegate the methods of the field reference via the method of the known interface.
+
+* * Decorator
+- The Decorator Pattern is used when we want to change the behaviour (?) of an object in RUNTIME by adding "layers" on it
+by "injecting" new component.
+
+* * Bridge
+- The Bridge Pattern is used when we want to separate the Abstract and the Implementation.
+- The Abstract will have a reference of the Implementation as a field, and we can the Implementation to the Abstract for
+delegation.
+
+* * Iterator
+- The Iterator Pattern is used when the client do not want to know what the structure of the data is but the next value
+of the structure
+- We will have a container which will contains the data structure and a nested class iterator that implements the
+Iterator interface. It also has a method to return an iterator to the client.
+- The iterator interface will commonly have 2 methods: Object next() to return the next object in the data structure and
+boolean hasNext() to return whether the iterator has reached the data's end or not.
+
+* * State
+- The State Pattern is used when we have a bunch of states that can switch to others states via some event trigger.
+
+* * Visitor
+- The visitor pattern is used when we want to retrieve data or do something with the content of a data structure but still
+retain the structure of the data, unlike the iterator just go to the next value.
+- We normally let the data object call its accept(Visitor v) rather than let the Visitor call visit inside the visitor,
+as teh object can accept anu visitors, but the method of the visitor is built for a specific object.
+

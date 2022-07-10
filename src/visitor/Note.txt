@@ -1,0 +1,7 @@
+# The visitor design pattern is used for the case the original class is prohibited to be changed.
+# It will be passes to the accept(Visitor v) method of the concrete Object, then it will call the visit(Object o) method
+of the visitor
+# Dont use the visitor design pattern in case the structure of the Objects could be changed.
+# Advantage:
+    When we need to add a new method, like count() or calculatePrice(), we do not have to change the original classes
+    but create a new concrete Visitor that have the new visit(Object o) method
